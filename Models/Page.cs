@@ -1,10 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Models
 {
-    public class Page
+    public class Page<T>
     {
+        public int CurrentPage {
+            get; set;
+        }
+        public int PageSize {
+            get; set;
+        }
+        public List<Post> Records {
+            get; set;
+        }
+        public int TotalPages {
+            get; set;
+        }
+        public void New() {
+
+        }
     }
 }
